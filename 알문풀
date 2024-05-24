@@ -1,5 +1,3 @@
-알문풀
-
 import sys
 sys.setrecursionlimit(10000)
 
