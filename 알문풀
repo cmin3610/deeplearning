@@ -30,4 +30,3 @@ for Y in range(M):
 
 print(len(area))
 print(*sorted(area))
-출처: https://develop247.tistory.com/245 [ImJay:티스토리]
