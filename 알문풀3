@@ -1,0 +1,19 @@
+for _ in range(int(input())):
+    n = int(input())
+    buttons = [0,0,0,0,0]
+    h, tm, m = n//60, (n % 60)//10, n % 10
+
+    if m > 5:
+        tm += 1
+        m -= 10
+    if tm > 3:
+        h += 1
+        tm -= 6
+    if tm < 0 and m == 5:
+        tm += 1
+        m -= 10
+
+buttons[0] = h
+buttons[2-(tm >= 0)] = abs(tm)
+buttons[4-(m >= 0)] = abs(m)
+print(*buttons)
